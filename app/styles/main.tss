@@ -1,0 +1,6 @@
+"#mainwin":{
+	 title:"Main Window",
+	 backgroundColor:"#fff",
+	 navBarHidden:false,
+	 exitOnClose:true
+}

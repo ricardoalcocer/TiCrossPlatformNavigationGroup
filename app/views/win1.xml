@@ -1,0 +1,3 @@
+<Alloy>
+	<Window id="win1" onClick="openwin"/>
+</Alloy>

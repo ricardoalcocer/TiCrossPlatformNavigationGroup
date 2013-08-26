@@ -1,0 +1,5 @@
+"#win2":{
+	 title:"Window 2",
+	 backgroundColor:"#cacaca",
+	 navBarHidden:"false"
+}
