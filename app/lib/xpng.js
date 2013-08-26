@@ -18,6 +18,6 @@ exports.openWin=function(navGroup,winName){
 		})
 		w.open();
 	}else{
-		Alloy.CFG.nav.open(w,{animated:true});
+		navGroup.open(w,{animated:true});
 	}
 }
