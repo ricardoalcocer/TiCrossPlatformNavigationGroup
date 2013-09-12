@@ -1,1 +1,13 @@
-<Alloy/>
+<Alloy>
+	<Window id="index" platform="android">
+		<Button title="Open Blue Window" onClick="openBlueWindow">
+	</Window>
+	
+	<Window id="index" platform="ios">
+        <NavigationGroup id="nav">
+            <Window id="win2" title="Red Window" backgroundColor="red">
+                <Button title="Open Blue Window" onClick="openBlueWindow">
+            </Window>
+        </NavigationGroup>
+    </Window>
+</Alloy>

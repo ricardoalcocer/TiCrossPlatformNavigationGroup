@@ -29,9 +29,9 @@
         </orientations>
     </iphone>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
-        <tool-api-level>14</tool-api-level>
+        <tool-api-level>11</tool-api-level>
         <manifest>
-            <application android:theme="@android:style/Theme.Holo.Light.DarkActionBar"/>
+            <application android:theme="@android:style/Theme.Holo.Light"/>
             <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="11"/>
         </manifest>
     </android>
@@ -52,8 +52,8 @@
         <target device="mobileweb">true</target>
         <target device="tizen">true</target>
     </deployment-targets>
-    <sdk-version>3.1.1.GA</sdk-version>
+    <sdk-version>3.1.2.GA</sdk-version>
     <plugins>
         <plugin version="1.0">ti.alloy</plugin>
     </plugins>
-<property name="ti.deploytype">development</property></ti:app>
+<property name="ti.deploytype">test</property></ti:app>

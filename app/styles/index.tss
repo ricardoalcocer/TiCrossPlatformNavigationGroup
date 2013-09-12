@@ -1,0 +1,9 @@
+"#index[platform=android]":{
+	 backgroundColor:"red",
+	 exitOnClose:"true",
+	 navBarHidden:"false"
+}
+
+"#index[platform=ios]":{
+ 	backgroundColor:"red"
+}
