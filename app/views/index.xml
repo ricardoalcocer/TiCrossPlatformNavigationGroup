@@ -1,12 +1,14 @@
 <Alloy>
-	<Window id="index" platform="android">
-		<Button title="Open Blue Window" onClick="openBlueWindow">
+    <!-- Anddroid Window -->
+	<Window id="index" onOpen="doopen" platform="android">
+		<Require src="win1content"/> 
 	</Window>
 	
+    <!-- iOS Window -->
 	<Window id="index" platform="ios">
         <NavigationGroup id="nav">
-            <Window id="win2" title="Red Window" backgroundColor="red">
-                <Button title="Open Blue Window" onClick="openBlueWindow">
+            <Window id="win1" title="Red Window" backgroundColor="red">
+                <Require src="win1content"/>   
             </Window>
         </NavigationGroup>
     </Window>
