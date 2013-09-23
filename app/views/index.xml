@@ -1,15 +1,13 @@
 <Alloy>
     <!-- Anddroid Window -->
-	<Window id="index" onOpen="doopen" platform="android">
+	<Window id="index" platform="android">
 		<Require src="win1content"/> 
 	</Window>
 	
     <!-- iOS Window -->
-	<Window id="index" platform="ios">
-        <NavigationGroup id="nav">
+        <NavigationWindow id="nav" platform="ios">
             <Window id="win1" title="Red Window" backgroundColor="red">
                 <Require src="win1content"/>   
             </Window>
-        </NavigationGroup>
-    </Window>
+        </NavigationWindow>
 </Alloy>

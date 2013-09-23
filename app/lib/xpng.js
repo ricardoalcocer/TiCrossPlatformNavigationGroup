@@ -3,7 +3,7 @@ exports.openWin=function(navGroup,winName){
 		var w=winName; // transfer the value to a new variable so the rest of the code remains the same	
 	}else{
 		var w=Alloy.createController(winName).getView();
-	}
+	};
 	
 	if (Ti.Platform.osname==='android'){
 		w.addEventListener('open',function(e){
@@ -19,9 +19,9 @@ exports.openWin=function(navGroup,winName){
 	            }
 	            w.activity.invalidateOptionsMenu();
 	        }
-		})
+		});
 		w.open();
 	}else{
-		navGroup.open(w,{animated:true});
+		navGroup.openWindow(w,{animated:true});
 	}
-}
+};
