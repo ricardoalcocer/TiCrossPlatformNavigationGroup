@@ -1,1 +1,0 @@
-module.exports = [{"isId":true,"priority":100000.0004,"key":"win1","style":{title:"Window 1",backgroundColor:"#fa0",navBarHidden:"false",}}];

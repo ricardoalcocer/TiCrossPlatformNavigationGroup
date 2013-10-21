@@ -1,8 +1,8 @@
-exports.openWin=function(navGroup,winName){
+exports.openWin=function(navGroup,winName,payload){
 	if (typeof Alloy === 'undefined'){
 		var w=winName; // transfer the value to a new variable so the rest of the code remains the same	
 	}else{
-		var w=Alloy.createController(winName).getView();
+		var w=Alloy.createController(winName,payload || {}).getView();
 	};
 	
 	if (Ti.Platform.osname==='android'){
