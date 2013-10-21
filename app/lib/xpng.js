@@ -1,6 +1,13 @@
 exports.openWin=function(navGroup,winName,payload){
 	if (typeof Alloy === 'undefined'){
 		var w=winName; // transfer the value to a new variable so the rest of the code remains the same	
+		// if there was a payload object transfer the values to the window
+		if (payload){
+			var payloadKeys=Object.keys(payload);
+			payloadKeys.forEach(function(item,index){
+				w[payloadKeys[index]]=payload[item];
+			})
+		}
 	}else{
 		var w=Alloy.createController(winName,payload || {}).getView();
 	};
